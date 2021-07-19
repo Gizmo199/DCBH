@@ -97,20 +97,32 @@ function bul_type_create(ind, _x, _y, dir, spd)
 	// Create radial bullets
 	if ( ind.radial )
 	{
+		// Get our angle division ( how many degrees to increment per bullet)
 		var adiv = ind.radial_cutoff / ( ind.radial_number-1 );
+		
+		// Get our starting angle
 		var sdir = dir + ( ind.radial_cutoff * 0.5 );
 		for ( var i=0; i<ind.radial_number; i++ )
 		{
+			// From our starting angle, decrement by our angle divisor for each bullet
 			var d = sdir - ( i * adiv );
+			
+			// Offset bullets correctly to account for scaling
 			var xx = _x + lengthdir_x(sprite_get_width(ind.sprite_index) * 0.5 * ind.image_xscale, d );
 			var yy = _y + lengthdir_y(sprite_get_width(ind.sprite_index) * 0.5 * ind.image_xscale, d );
+			
+			// Create our bullet
 			var bul = instance_create_layer( xx, yy, layer, bullet_object );
 			
+			// Set initial bullet direction, angle, and speed
 			bul.direction = d;
 			bul.image_angle = d;
 			bul.speed = spd;
 			
+			// Set bullet attributes
 			ind.bul_type_set_attributes(bul);
+			
+			// Set our return array
 			ret[i] = bul;
 		}
 	}
@@ -118,17 +130,25 @@ function bul_type_create(ind, _x, _y, dir, spd)
 	
 	// Create regular bullets
 	{
+		// Offset bullets correctly to account for scaling
 		var xx = _x + lengthdir_x(sprite_get_width(ind.sprite_index) * 0.5 * ind.image_xscale, dir );
 		var yy = _y + lengthdir_y(sprite_get_width(ind.sprite_index) * 0.5 * ind.image_xscale, dir );
+		
+		// Create our bullet
 		var bul = instance_create_layer( xx, yy, layer, bullet_object );
 		
+		// Set initial bullet direction, angle, and speed
 		bul.direction = dir;
 		bul.image_angle = dir;
 		bul.speed = spd;
-			
+		
+		// Set bullet attributes
 		ind.bul_type_set_attributes(bul);
+		
+		// Set our return array
 		ret[0] = bul;
 	}
 	
+	// Return our bullet ID array
 	return ret;
 }
