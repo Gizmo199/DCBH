@@ -26,7 +26,6 @@ function bul_type() constructor
 		o.sprite_index			= sprite_index;
 		o.image_index			= image_index;
 		o.image_speed			= image_speed;
-		o.image_angle			= image_angle;
 		o.image_xscale			= image_xscale;
 		o.image_yscale			= image_yscale;
 		o.image_alpha			= image_alpha;
