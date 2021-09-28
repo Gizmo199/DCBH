@@ -1,0 +1,57 @@
+{
+  "resources": [
+    {"id":{"name":"scr_bulletsystem","path":"scripts/scr_bulletsystem/scr_bulletsystem.yy",},"order":0,},
+    {"id":{"name":"spr_ui_pickup","path":"sprites/spr_ui_pickup/spr_ui_pickup.yy",},"order":2,},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
+    {"id":{"name":"scr_weaponscripts","path":"scripts/scr_weaponscripts/scr_weaponscripts.yy",},"order":1,},
+    {"id":{"name":"scr_animationsystem","path":"scripts/scr_animationsystem/scr_animationsystem.yy",},"order":2,},
+    {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":1,},
+    {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"order":0,},
+    {"id":{"name":"obj_weapon_par","path":"objects/obj_weapon_par/obj_weapon_par.yy",},"order":2,},
+    {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":0,},
+    {"id":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},"order":1,},
+    {"id":{"name":"config_weaponprofiles","path":"scripts/config_weaponprofiles/config_weaponprofiles.yy",},"order":1,},
+    {"id":{"name":"config_bulletprofiles","path":"scripts/config_bulletprofiles/config_bulletprofiles.yy",},"order":0,},
+    {"id":{"name":"spr_guns","path":"sprites/spr_guns/spr_guns.yy",},"order":1,},
+    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":1,},
+  ],
+  "Options": [
+    {"name":"HTML5","path":"options/html5/options_html5.yy",},
+    {"name":"Linux","path":"options/linux/options_linux.yy",},
+    {"name":"macOS","path":"options/mac/options_mac.yy",},
+    {"name":"Main","path":"options/main/options_main.yy",},
+    {"name":"Windows","path":"options/windows/options_windows.yy",},
+  ],
+  "isDnDProject": false,
+  "isEcma": false,
+  "tutorialPath": "",
+  "configs": {
+    "name": "Default",
+    "children": [],
+  },
+  "RoomOrderNodes": [
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+  ],
+  "Folders": [
+    {"folderPath":"folders/Weapons.yy","order":2,"resourceVersion":"1.0","name":"Weapons","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Player.yy","order":3,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Weapons/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Weapons/Scripts.yy","order":2,"resourceVersion":"1.0","name":"Scripts","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Weapons/Objects.yy","order":3,"resourceVersion":"1.0","name":"Objects","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Weapons/Configs.yy","order":4,"resourceVersion":"1.0","name":"Configs","tags":[],"resourceType":"GMFolder",},
+  ],
+  "AudioGroups": [
+    {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
+  ],
+  "TextureGroups": [
+    {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
+  ],
+  "IncludedFiles": [],
+  "MetaData": {
+    "IDEVersion": "2.3.4.583",
+  },
+  "resourceVersion": "1.4",
+  "name": "DCBH Tutorial 3 - Procedural Animation Tricks",
+  "tags": [],
+  "resourceType": "GMProject",
+}
